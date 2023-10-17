@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ЖК ВОЗРАЖДЕНИЕ</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href = "index.html"><img src="./img/header/header-logo.png" alt="LOGO"></a>
+               <nav class="nav open">
+                <ul class = "nav-list">
+                    <a href="aboutCompany.html"><li class = "link-items">О компании</li></a>  
+                    <a href="news.html"><li class = "link-items">Новости</li></a>    
+                    <a href="document.html"><li class = "link-items">Документы</li></a>    
+                    <a href="#!"> <li class = "link-items">Контакты</li></a>   
+                </ul>
+                <div class="wrapper-dropdown-mobile">
+                    <div class="dropdown">
+                        <button class="nav__btn" id="openMobileNav">
+                            Меню
+                            <img src="./img/mobile/header-btn.png" alt="">
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="aboutCompany.html">Компания</a>
+                          <a href="news.html">Новости</a>
+                          <a href="document.html">Документы</a>
+                          <a href="#">Контакты</a>
+                        </div>
+                      </div>
+                </div>
+               </nav>
+               <div class="header__tel__content">
+                    <div class="header__content__tel__block">
+                        <a href=”tel:+798245-22-67”>+7 982 45-22-67</a>
+                        <p class = "info__job__graphic">Пн-Пт. с 8:00 до 19:00</p>
+                    </div>
+                    <img class = "icon-tg" src="./img/header/icon-telegram-header.png" alt="">
+               </div>
+               </div>
+            </div>
+            <img class = "mobile-img-header none" src="./img/mobile/mobile-img-up-header.png" alt="">
+            <div class="container">
+                <div class="header__title">Более <span class = "blue">1000<img class = "blue__line" src="./img/header/1000-for-line.png" alt="line"></span> комфортных квартир от 2,3 млн рублей  в Дзержинском р-не Ярославля
+                    
+                </div>
+                <div class="header__button">
+                    <a href = "chooseAnApartment.html"><button class="btn__left">Выбрать квартиру</a>
+                        <img class = "icon-keyboard" src="./img/header/icon-btn-header.png" alt="">
+                    </button>
+                    <button class="btn__right" onclick = "openForm()">Получить консультацию</button>
+                </div>
+                <div class="form-popup" id="myForm">
+                    <form action="index.html" class="form-container">
+                      <h1>Бесплатная консультация</h1>
+                      <h2>Оставьте заявку и наши специалисты<br>Свяжуется с Вами в ближайшее время</h2>
+                      <div class="wrapper-label-input">
+                      <label for="email"><b>Ваше имя*</b></label>
+                      <input type="text" placeholder="Имя" name="email" required>
+                  
+                      <label for="tel"><b>Ваш номер телефона*</b></label>
+                      <input type="tel" placeholder="+__ (__) ___ _ __" name="tel" required>
+                  
+                      <button type="submit" class="btn">Отправить</button>
+                      <button type="submit" class="btn cancel btn__cancel" onclick="closeForm()">Закрыть</button>
+                        </div>
+                    </form>
+                  </div>
+        </div>
+    </header>
+
+    <section class="benefits__of__living">
+        <div class="container">
+            <div class="benefits__title">Преимущества жизни в ЖК “Возрождение”</div>
+            <div class="benefits__Wrapper">
+            <div class="benefits__content">
+                <div class="benefits__block__1 text">
+                    <div class="wrapper__benefits__blocks">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-ecology.png" alt="ecology">
+                    <p>Экология</p> 
+                </div>
+                </div>
+                <div class="benefits__block__2 text">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-price.png" alt="ecology">
+                    <p>Доступная стоимость</p>
+                </div>
+                <div class="benefits__block__3 text">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-reliability.png" alt="ecology">
+                    <p>Надежность</p> 
+                    </div>
+            </div>
+            <div class="benefits__content__down">
+                <div class="benefits__block__4 text">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-buss.png" alt="ecology">
+                    <p>Транспортная доступность</p> 
+                </div>
+                <div class="benefits__block__5 text">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-layout.png" alt="ecology">
+                    <p>Разнообразие планировки</p> 
+                </div>
+                <div class="benefits__block__6 text">
+                    <img class = "benefits-img__1" src="./img/benefits-section/icon-infrastructure.png" alt="ecology"> 
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="gps">
+        <div class="gps__title">Инфраструктура и расположение</div>
+        <img class = "mobile-map none" src="./img/mobile/mobile-map.png" alt="">
+        <img class = "img-map" src="./img/gps-section/Map.png" alt="MAP">
+    </section>
+
+    <section class="construction">
+        <div class="container">
+            <div class="construction__title">Ход строительства</div>
+            <div class="construction__switch">
+                <button class="consturction-btn">Литер 1
+                    <h2 class ="september-december">Сентябрь 2021 - Декабрь 2022
+                    </h2>
+                </button>
+                <button id = "gray" class="consturction-btn">Литер 2
+                    <h2 id = "gray2" class ="september-december">Март 2022- Декабрь 2023
+
+                    </h2>
+                </button>
+                <button id = "gray" class="consturction-btn">Литер 3
+                    <h2 id = "gray2" class ="september-december">Март 2023 - Декабрь 2024
+                    </h2>
+                </button>
+                <button id = "gray" class="consturction-btn">Литер 4
+                    <h2 id = "gray2" class ="september-december">Март 2025 - Декабрь 2026
+                    </h2>
+                </button>
+            </div>
+            <div class="slider">
+                <div class="owl-carousel owl-theme">
+                    <div class="slider__items slide">
+                        <img class = "slide__img" src="./img/slider/slider-01.png" alt="">
+                    </div>
+                    <div class="slider__items slide">
+                        <img class = "slide__img__2" src="./img/slider/slider-02.png" alt="">
+                    </div>
+                    <div class="slider__items slide">
+                        <img class = "slide__img" src="./img/slider/slider-03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule__job">
+        <div class="container">
+            <div class="schedule__title">График выполнения работ</div>
+        <img class = "img-table" src="./img/table/Таблица.png" alt="">
+               
+            </div>
+        </div>
+    </section>
+    <section class="apartment__layout">
+        <div class="container">
+            <div class="apartment__layout__title">Планировка квартир</div>   
+            <div class="apartment__content">
+                <div class="apartment__content__block__1">
+                    <img src="./img/apartment-section/main-img.png" alt="apartments">
+                </div>   
+                <div class="apartment__content__block__2">
+                    <div class="apartment__switch">
+                        <button class="consturction-btn">1-комн.</button>
+                        <button id = "blue" class="apartment-btn">2-комн.</button>
+                        </div>
+                        <div class="apartment__content__title">Однокомнатные квартиры от 23 м2</div>  
+                        <div class="apartment__content__sub__title">от 5 400 000 ₽</div> 
+                        <button class="apartment-btn-2">Подобрать квартиру</button>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="gallery__photo">
+        <div class="container">
+            <div class="gallery__title">Галерея наших фото</div>
+                <div class="slider">
+                    <div class="owl-carousel owl-theme">
+                <img class = "img__item__1" src="./img/gallery-section/img-1.png" alt="">
+                <img class = "img__item__2" src="./img/gallery-section/img-2.png" alt="">
+                <img class = "img__item__3" src="./img/gallery-section/img-3.png" alt="">
+                </div>
+                </div>
+        </div>
+        <div class="gallery__title__next__section">Как купить?</div>
+    </section>
+
+    <section class="why__buy">
+        <div class="container">
+            <div class="wrapper__why">
+                <div class="wrapper_all__block ">   
+            <div class="why__buy__block__1 why__block">
+                <div class="why__content__block1 block__content">
+                <img class = "why-img" src="./img/why__buy-section/icon-1.png" alt="">
+                <div class="why__title__1 why__title">Материнский капитал
+                    <p class = "why__text__1 why__text">Материнский капитал и другие субсидии в качестве первоначального взноса при покупке жилья в ипотеку или части стоимости квартиры.</p>
+                </div>
+            </div>
+        </div>
+            <div class="why__buy__block__2  why__block">
+                <div class="why__content__block2 block__content">
+                <img class = "why-img" src="./img/why__buy-section/icon-2.png" alt="">
+                <div class="why__title__2 why__title">В ипотеку
+                    <p class = "why__text__2 why__text">Специальные ставки некоторых категорий граждан: многодетных и военных.</p>
+                </div>
+            </div>
+            </div>
+            <div class="why__buy__block__3  why__block">
+                <div class="why__content__block3 block__content">
+                <img class = "why-img" src="./img/why__buy-section/icon-3.png" alt="">
+                <div class="why__title__3 why__title">100% оплата
+                    <p class = "why__text__3 why__text">Принимают оплату по безналичному расчету.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="why__buy__question__right__block">
+            <div class="why__right__block__content">
+                <div class="right__title why__title">Есть вопросы? </div>
+                <div class="right__text">Закажите бесплатную<br>консультацию или звоните за<br>номером:</div>
+                <div class="right__number why__title">+7 982 45-22-67</div>
+                <button class="why-btn">Заказать консультацию</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="reviews__clients">
+        <div class="reviews__title">Отзывы наших клиентов</div>
+        <div class="reviews__content">
+        <div class="reviews__info__1">
+            <div class="reviews__content__block__1">
+                <img src="./img/reviews-section/img-1.png" alt="">
+                <div class="reviews__title__block__1">Антон Сергеевич
+                    <P>Страница VK</P>
+                </div>
+            </div>
+            <div class="reviews__text__block__1">Повседневная практика показывает, что начало повседневной работы по формированию позиции предопределяет высокую востребованность форм воздействия!</div> 
+        </div>
+        <div class="reviews__info__2">
+            <div class="reviews__content__block__1">
+                <img src="./img/reviews-section/img-2.png" alt="">
+                <div class="reviews__title__block__1">Виталий Степанов
+                    <P>Страница VK</P>
+                </div>
+            </div>
+            <div class="reviews__text__block__1">Современные технологии достигли такого уровня, что внедрение современных методик говорит о возможностях как самодостаточных, так и внешне зависимых концептуальных решений. Диаграммы связей объективно рассмотрены соответствующими инстанциями.</div> 
+        </div>
+        <div class="reviews__info__1">
+            <div class="reviews__content__block__1">
+                <img src="./img/reviews-section/img-3.png" alt="">
+                <div class="reviews__title__block__1">Анна Петровна
+                    <P>Страница VK</P>
+                </div>
+            </div>
+            <div class="reviews__text__block__1">Современные технологии достигли такого уровня, что постоянное информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для переосмысления внешнеэкономических политик.</div> 
+        </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__title">Наши партнеры</div>
+            <div class="partners__content">
+                <div class="partners__block__content__1">
+                    <img class = "img-partners" src="./img/partners-scection/img-1.png" alt="">
+                </div>
+                <div class="partners__block__content__1">
+                    <img class = "img-partners" src="./img/partners-scection/img-2.png" alt="">
+                </div>
+                <div class="partners__block__content__1">
+                    <img class = "img-partners" src="./img/partners-scection/img-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block__1">
+                <a><img src="./img/footer/footer-logo.png" alt="LOGO"></a>
+                     <div class="footer__question">
+                        <div class="footer__content__1">
+                            <div class="footer__title__1">Остались вопросы?</div>
+                            <div class="footer__text__1">Закажите бесплатную консультацию</div>
+                        </div>
+                        <button class="footer-btn">Заказать консультацию</button>
+                </div>
+            </div>
+        </div>
+            <hr class = "line-footer-1">
+            <div class="container">
+            <div class="footer__block__2">
+                <div class="footer__contact">
+                    <div class="footer__telephone">
+                        <p class="small">Телефон:</p>
+                        <p class="big">+7 982 45-22-67</p>
+                    </div>
+                    <div class="footer__mail">
+                        <p class="small">Ел. почта:</p>
+                        <p class="big">vozrojdenie@yandex.ru</p>
+                    </div>
+                    <div class="footer__adress">
+                        <p class="small">Адрес офиса:</p>
+                        <p class="big">Ярославская обл. Ярославль,<br> Почтовая улица 12/2</p>
+                    </div>
+                    <div class="footer__object">
+                        <p class="small">Адрес обекта:</p>
+                        <p class="big">Ярославская обл. Ярославль,<br> рядом с ул. Бабича 10/22</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <hr class = "line-footer-1">
+       <div class="container">
+       <div class="footer__block__3">
+       <div class="footer__content__block__3">
+        <p class = "footer__block__3__text">Политика конфиденциальности</p>
+        <p class = "footer__block__3__text">Документы</p>
+       </div>
+       <div class="footer-nav">
+        <div class="footer-wrapper-nav-img">
+        <img src="./img/footer/icon-1.png" alt="VKontakte">
+        <img src="./img/footer/icon-2.png" alt="Telegram">
+        <img src="./img/footer/icon-3.png" alt="Instagram">
+        </div>
+        <button class = "footer-up-button">
+            <img src="./img/footer/footer-btn.png" alt="Up-btn">
+        </button>
+       </div>
+        </div>
+    </div>
+</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "./js/main.js"></script>
+</body>
+</html>
